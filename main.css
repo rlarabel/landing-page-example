@@ -1,0 +1,151 @@
+body {
+	background: url(images/bg-desktop.svg);
+	background-color: hsl(257, 40%, 49%);
+}
+@media (max-width: 375px){
+	body {
+		background: url(images/bg-mobile.svg);
+		background-color: hsl(257, 40%, 49%);
+	}
+}
+
+.container {
+	margin: 0 5% 0 5%;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 15% auto auto;
+	grid-gap: 20px;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+
+}
+
+header {
+	align-self: center;
+	grid-area: header;
+	
+}
+
+footer {
+	grid-area: footer;
+	justify-self: center;
+	align-self: center;
+}
+@media (min-width: 700px){
+	footer {
+	grid-area: footer;
+	align-self: center;
+	justify-self: end;
+	}
+}
+
+main {
+	max-width: 100%;
+	height: auto;
+	grid-area: main;
+	display: flex;
+	flex-direction:row;
+
+}
+
+@media (max-width: 700px){
+    main {
+    	grid-area: main;
+		max-width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction:column;
+		
+    }
+}
+
+
+h1 {
+	font-family: "Poppins";
+	font-weight: 600;
+	color: white;
+}
+
+@media (max-width: 700px){
+	h1 {
+		font-family: "Poppins";
+		font-weight: 600;
+		color: white;
+		text-align: center;
+	}
+}
+
+p {
+	font-family: "Open Sans";
+	color: white;
+	font-weight: 400;
+}
+@media (max-width: 700px){
+	p {
+		font-family: "Open Sans";
+		color: white;
+		font-weight: 400;
+		text-align: center;
+	}
+}
+
+button {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "Open Sans";
+	border-radius: 25px;
+	background-color: white;
+	color: hsl(257, 40%, 49%);
+	padding: 10px 60px;
+	border-color: transparent;
+	box-shadow: 0 0 25px 25px rgba(0,0,0,0.22);
+}
+
+button:hover {
+	background-color: hsl(300, 69%, 71%);
+	color: white;
+}
+
+.illustration img {
+	width: 100%;
+	height: auto;
+}
+
+.site-content {
+	flex: 1 1 auto;
+	display: flex;
+	height: auto;
+	margin: 0 40px 0 60px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+@media (max-width: 700px){
+	.site-content {
+		display: flex;
+		height: auto;
+		margin: 0 40px 0 40px;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+.illustration{
+	flex: 1 1 100%;
+}
+.social-content {
+	margin: 40px 0 20px 0;
+}
+.icon {
+	border-radius: 50%;
+	border: 1px white solid;
+	padding: 7px;
+	color: white;
+}
+.icon:hover {
+	background-color: hsl(300, 69%, 71%);
+}
