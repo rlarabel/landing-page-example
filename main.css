@@ -115,7 +115,7 @@ button:hover {
 }
 
 .site-content {
-	flex: 1 1 auto;
+	flex: 1 1 50%;
 	display: flex;
 	height: auto;
 	margin: 0 40px 0 60px;
@@ -135,7 +135,7 @@ button:hover {
 
 
 .illustration{
-	flex: 1 1 100%;
+	flex: 709px 1 50%;
 }
 .social-content {
 	margin: 40px 0 20px 0;
