@@ -53,4 +53,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - Website - [Ramses' Portfolio](https://www.ramsesportfolio.com)
 - Frontend Mentor - [@rlarabel](https://www.frontendmentor.io/profile/rlarabel)
-- 
